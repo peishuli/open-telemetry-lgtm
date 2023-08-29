@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\src\\cartservice.csproj": {}
+  },
+  "projects": {
+    "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\src\\cartservice.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\src\\cartservice.csproj",
+        "projectName": "cartservice",
+        "projectPath": "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\src\\cartservice.csproj",
+        "packagesPath": "C:\\Users\\peishu.li\\.nuget\\packages\\",
+        "outputPath": "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\src\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\chl\\o11y\\otel\\opentelemetry-demo\\src\\cartservice\\NuGet.Config",
+          "C:\\Users\\peishu.li\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Grpc.AspNetCore": {
+              "target": "Package",
+              "version": "[2.53.0, )"
+            },
+            "Grpc.AspNetCore.HealthChecks": {
+              "target": "Package",
+              "version": "[2.53.0, )"
+            },
+            "OpenTelemetry.Exporter.OpenTelemetryProtocol": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
+            "OpenTelemetry.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[1.5.1, )"
+            },
+            "OpenTelemetry.Instrumentation.AspNetCore": {
+              "target": "Package",
+              "version": "[1.5.0-beta.1, )"
+            },
+            "OpenTelemetry.Instrumentation.GrpcNetClient": {
+              "target": "Package",
+              "version": "[1.5.0-beta.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Http": {
+              "target": "Package",
+              "version": "[1.5.0-beta.1, )"
+            },
+            "OpenTelemetry.Instrumentation.Runtime": {
+              "target": "Package",
+              "version": "[1.5.0, )"
+            },
+            "OpenTelemetry.Instrumentation.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[1.0.0-rc9.10, )"
+            },
+            "OpenTelemetry.ResourceDetectors.Container": {
+              "target": "Package",
+              "version": "[1.0.0-beta.4, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.122, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

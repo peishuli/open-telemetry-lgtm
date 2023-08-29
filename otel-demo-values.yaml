@@ -1,0 +1,25 @@
+opentelemetry-collector:
+  mode: deployment
+  service:
+    enabled: true
+    internalTrafficPolicy: Cluster
+  config:
+    exporters:
+      otlp/tempo:
+        endpoint: tempo-distributed-distributor.lgtm-stack.svc.cluster.local:4317
+        tls:
+          insecure: true
+
+    service:
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [memory_limiter, batch]
+          exporters: [otlp, logging, spanmetrics, otlp/tempo]
+
+components:
+  cartService:
+    imageOverride:
+      repository: peishu/cartservice
+      tag: v01
+    
