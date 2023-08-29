@@ -22,4 +22,5 @@ components:
     imageOverride:
       repository: peishu/cartservice
       tag: v01
+      pullPolicy: Always
     

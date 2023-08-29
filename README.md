@@ -33,10 +33,7 @@ URLs
 - Jaeger UI: <http://localhost:9080/jaeger/ui/>
 
 
-To clean up"
-```sh
-helm -n otel-demo uninstall otel-demo
-```
+
 
 ### Customized CartService
 - Added logging
@@ -47,4 +44,22 @@ To build and push the custom cartservice image:
 # TODO: Had to copy Dockerfile to the root folder
 docker build -t peishu/cartservice:v01 .
 docker push peishu/cartservice:v01
+```
+
+### Work with Distributed Tracing in Grafana Tempo
+To view logs, open the Grafana UI (from your LGTM stack) and select `Loki` from the data sources dropdown. Run the following query:
+```
+{app="otel-demo-cartservice"}
+```
+then expand one of the log entries with "...with traceId=xxxxxx..." and you should see a `Tempo` button in the Links section. Click on the Tempo button will open the Tempo tracing panel side by side with Loki:
+
+![Log to Trace](./log-to-trace.png)
+
+You can also view the `Node graph` from Tempo by selecting the `Service Graph` tab and click on `Run queyr`:
+
+![Node graph](./node-graph.png)
+
+To clean up
+```sh
+helm -n otel-demo uninstall otel-demo
 ```
