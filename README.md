@@ -32,9 +32,6 @@ URLs
 - Load Generator UI: <http://localhost:9080/loadgen/>
 - Jaeger UI: <http://localhost:9080/jaeger/ui/>
 
-
-
-
 ### Customized CartService
 - Added logging
 - Use my personal Docker hub repo to store the image
@@ -55,7 +52,7 @@ then expand one of the log entries with "...with traceId=xxxxxx..." and you shou
 
 ![Log to Trace](./log-to-trace.png)
 
-You can also view the `Node graph` from Tempo by selecting the `Service Graph` tab and click on `Run queyr`:
+You can also view the `Node graph` from Tempo by selecting the `Service Graph` tab and click on `Run query`:
 
 ![Node graph](./node-graph.png)
 
